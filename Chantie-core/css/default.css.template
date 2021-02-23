@@ -6,6 +6,7 @@ body {
     height: 100%;
     flex-direction: column;
     min-height: 100vh;
+    font-size: [base_font_size]px;
 }
 .page-content {
     flex: 1 0 auto;
@@ -41,11 +42,11 @@ input:focus::-moz-placeholder {
 }
 body {
     font-family: 'Poppins', sans-serif;
-    color: #000;
+    color: #[body_text_color];
     line-height: 1.5;
 }
 h1 {
-    font-size: 30px;
+    font-size: [heading_base_size]px;
 }
 
 .titles {
@@ -128,29 +129,29 @@ div.searchlight-balloon {
 .btn-default,
 .btn-primary:focus, 
 .btn-primary:active:focus {
-    border-color: #f08833;
-    background-color: #fff;
-    color: #000;
+    border-color: #[primary-btn-border];
+    background-color: #[primary-btn-bg];
+    color: #[primary-btn-text];
 }
 .btn-default:hover,
 .btn-default:focus,
 .btn-default:hover:focus,
 .btn-default.focus {
-    color: #fff;
-    background-color: #f08833;
-    border-color: #f08833;
+    color: #[primary-btn-text-hover];
+    background-color: #[primary-btn-bg-hover];
+    border-color: #[primary-btn-border-hover];
 }
 .btn-default.btn-inverse,
 .btn-primary {
-    color: #fff;
-    background-color: #f08833;
-    border-color: #f08833;
+    color: #[secondary-btn-text];
+    background-color: #[secondary-btn-bg];
+    border-color: #[secondary-btn-border];
 }
 .btn-default.btn-inverse:hover,
 .btn-primary:hover {
-    color: #fff;
-    background-color: #f08833;
-    border-color: #f08833;
+    color: #[secondary-btn-text-hover];
+    background-color: #[secondary-btn-bg-hover];
+    border-color: #[secondary-btn-border-hover];
     opacity: 0.8;
 }
 .nav-cat-menu {
@@ -162,7 +163,7 @@ div.searchlight-balloon {
     background-color: transparent;
 }
 .navbar-inverse .navbar-nav > li > a {
-    color: #000;
+    color: #[navigation-text-color];
     font-weight: 600;
     letter-spacing: 0.025em;
     text-transform: capitalize;
@@ -171,7 +172,7 @@ div.searchlight-balloon {
     min-height: auto;
 }
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-    color: #000;
+    color: #[navigation-text-hover-color];
     background-color: transparent;
     text-decoration: underline;
 }
@@ -252,18 +253,14 @@ div.searchlight-balloon {
     opacity: 0.6;
 }
 .top-nav {
-    background: #4da427;
+    background: #[topnav_bg];
     padding: 10px 0;
 }
 .top-nav ul {
-    /* padding: 19px 0; */
     margin: 0;
     list-style: none;
-    /* font-size: 12px; */
-    /* line-height: 1; */
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
-    /* font-weight: bold; */
 }
 .useraccount ul li {
     margin-right: 0px !important;
@@ -284,7 +281,7 @@ div.searchlight-balloon {
     padding: 0;
 }
 .top-nav ul li a {
-    color: #fff;
+    color: #[top_nav-text-color];
     font-size: 13px;
     font-weight: 600;
     line-height: 30px;
@@ -340,10 +337,6 @@ div.searchlight-balloon {
 
 .top-nav ul li a .icon-user,
 .minicart .cart-icon {
-    /* display: block; */
-    /* width: auto; */
-    /* height: 30px; */
-    /* line-height: 30px; */
     font-size: 20px;
     float: left;
     margin-right: 5px;
@@ -354,12 +347,6 @@ div.searchlight-balloon {
     padding: 0;
 }
 
-span.cart-title {
-/*     font-size: 12px;
-    line-height: 15px;
-    display: block;
-    font-weight: bold; */
-}
 span.cart-count {
     color: #666;
     font-size: 10px;
@@ -368,9 +355,9 @@ span.cart-count {
     font-weight: 500;
 }
 .site-footer {
-    background-color: #f1f1f1;
+    background-color: #[footer-bg];
     padding: 55px 0 0;
-    color: #fff;
+    color: #[footer-text-color];
     font-family: 'Poppins', sans-serif;
 }
 
@@ -383,14 +370,10 @@ ul.extrapages li {
     margin: 0 0 15px;
 }
 ul.extrapages li a {
-    color: #000;
+    color: #[footer-links-color];
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
-}
-.footer-social {
-    /* border-top: 1px solid #2d2d2d;
-    border-bottom: 1px solid #2d2d2d; */
 }
 .social-icons,
 .global-footer {
@@ -404,7 +387,7 @@ ul.extrapages li a {
     color: #fff;
     font-size: 14px;
     font-weight: 500;
-    background: #4da427;
+    background: #[secondary-accent];
 }
 .copyright a {
     color: #fff;
@@ -428,22 +411,22 @@ ul.extrapages li a {
     font-size: 17px;
     text-transform: uppercase;
     font-weight: 600;
-    color: #000;
+    color: #[footer-text-color];
 }
 .mailinglist-input.form-control {
     background-color: #fff;
     border-color: transparent;
     max-width: 320px;
-    color: #fff;
+    color: #[footer-text-color];
     float: left;
     box-shadow: none;
     border-radius: 5px;
     height: 42px;
 }
 .mailinglist-submit {
-    background-color: #f08833;
-    color: #fff !important;
-    border-color: #fff !important;
+    background-color: #[secondary-btn-bg];
+    color: #[secondary-btn-text] !important;
+    border-color: #[secondary-btn-border] !important;
     float: right;
     width: 90px;
     border-radius: 5px;
@@ -505,7 +488,7 @@ ul.social-icons li.social-icons-label {
 }
 .social-icons li a {
     color: #fff;
-    background-color: #f08833;
+    background-color: #[primary-accent];
     width: 23px;
     height: 23px;
     line-height: 23px;
@@ -523,12 +506,6 @@ ul.social-icons li.social-icons-label {
 }
 
 
-/*.product-item .reviews-stars:before {
-    font-family: "fontello";
-    content: "\e803 \e803 \e803 \e803 \e803";
-    color: #b8b8b8;
-}
-*/
 .product-item .reviews-stars {
     color: gold;
 }
@@ -542,7 +519,7 @@ ul.social-icons li.social-icons-label {
 .rating:hover .rating-star:hover ~ .rating-star,
 .rating-input:checked ~ .rating-star,
 .reviews-stars {
-    color: #000;
+    color: #[stars-active-color];
 }
 
 .product-items .product-item .name,
@@ -564,7 +541,7 @@ ul.social-icons li.social-icons-label {
     text-decoration: line-through;
 }
 .sale-price {
-    color: #d04b64;
+    color: #[sale-color];
 }
 del.original-price {
     font-weight: 500;
@@ -632,7 +609,7 @@ span.freeshipping {
     text-transform: uppercase;
     padding-bottom: 10px;
     margin-left: auto;
-    border: 1px solid #4da427;
+    border: 1px solid #[secondary-accent];
     position: relative;
     text-align: center;
     padding: 12px;
@@ -656,9 +633,7 @@ span.freeshipping {
 .home-page-content {
     padding-top: 0;
 }
-/*.home-page-content .category-footer {
-    padding: 40px 0 60px;
-}*/
+
 .home-page-content .category-footer h3 {
     font-size: 20px;
     line-height: 1;
